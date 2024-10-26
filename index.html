@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <img class="imagen" src="205137_1369293.jpg.1500x843_q95_crop-smart_upscale.jpg" alt="imagen de rick sanchez">
+
+    </main>
+    
+    <header>
+        
+        <nav class="navbar">
+
+            <div class="menu-icon" id="menu-icon">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <select name="pagina" id="pagina" onchange="apiRick(this.value)">
+            <script>
+                for(i = 1; i <= 42; i++){
+                    document.write(`<option value="${i}">${i}</option>`)
+                }
+            </script>
+        </select>
+    
+    </header>
+
+
+
+    
+<div id="resultado"></div>
+
+
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+}
+    .navlist {
+        display: flex;                  /* Configura la lista de navegación como un contenedor flex */
+        list-style-type: none;         /* Elimina los puntos de la lista */
+        padding: 0;                    /* Elimina el padding por defecto */
+        margin: 0;                     /* Elimina el margen por defecto */
+    }
+    
+    .navlist li {
+        margin-right: 20px;            /* Espacio entre los elementos de la lista */
+    }
+    
+    .navlist li:last-child {
+        margin-right: 0;               /* Elimina el margen del último elemento */
+    }
+    
+    .nav-link {
+        text-decoration: none;          /* Elimina el subrayado de los enlaces */
+        color: #ffffff;                   /* Color del texto de los enlaces */
+        font-weight: bold;             /* Negrita para los enlaces */
+    }
+    
+    select {
+        padding: 5px;                  /* Espaciado interno del select */
+    }
+
+.navlist {
+    display: flex;
+    width: 100%; /* La imagen ocupará el 100% del ancho disponible */
+    height: auto;
+    list-style: none;
+}
+
+ul li a{
+    color: #fff;
+    margin-right: 50px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 17px;
+} 
+
+body {
+    text-align: center;
+  background-color: #1f1f1f;
+}
+
+select {
+   
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    color: #333; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    padding: 5px;
+    width: 60px; 
+    cursor: pointer;
+    background-repeat: no-repeat; 
+    background-position: right 10px center; 
+    background-size: 16px;
+} 
+
+.character-card {
+    position: relative;
+    display: inline-block;
+    width: 18rem;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    color: #e4e4e4;
+    height: auto;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    top: 120px;
+    margin: 20px 20px 20px 20px;
+    
+}
+  
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Blanco con transparencia */
+    color: #000; /* Texto negro */
+    border-radius: 8px;
+    padding: 10px 24px;
+    overflow: hidden;
+    line-height: 110%;
+    font-weight: 700;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  main img{
+    position: relative;
+    width: 100%; 
+    height: auto;
+    mask-image: linear-gradient(white 70%, transparent);
+    top: 40px;
+    background-image: url('205137_1369293.jpg.1500x843_q95_crop-smart_upscale.jpg');
+    background-repeat: no-repeat;
+     background-position: center;
+    background-size: cover;
+  }
+
+
+
+
+
+  header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 9%;
+    background: rgba(15, 18, 41, 0.8);
+    backdrop-filter: blur(20px);
+    height: auto;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+   
+}
+
+/* Estilos del ícono de hamburguesa */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    
+}
+
+.menu-icon .line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu {
+        display: none; 
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 79px; /* Altura deseada desde la parte superior */
+        left: 0px;    /* Alineado a la izquierda */
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: flex;
+        margin: 10px;
+    }
+
+    .menu.show {
+        display: flex; /* Mostramos el menú cuando esté activo */
+    }
+
+    .menu li {
+        padding: 15px 0;
+        margin-left: -1%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .menu li a {
+        color: white;
+        text-decoration: none;
+    }
+}
